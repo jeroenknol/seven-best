@@ -1,0 +1,11 @@
+<h1>Pictures</h1>
+
+<% @pictures.each do |picture| %>
+
+ <p>
+   <%= link_to picture.caption, picture_path(picture.id) %>
+   by 
+   <%= link_to picture.user.first_name, user_path(picture.user.id) %>
+   <%= image_tag picture.image_url %>
+</p>
+<% end %>
