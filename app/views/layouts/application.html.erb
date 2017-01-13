@@ -9,6 +9,24 @@
   </head>
 
   <body>
+    <header>
+      <%= link_to root_url do %>
+        <nav class="header-left">
+          <li class="header-logo"><%= image_tag "http://placehold.it/50x50" %></li>
+          <li class="header-name">Seven Best</li>
+        </nav>
+      <% end %>
+
+      <nav class="header-right">
+        <li><%= link_to "Users", "#" %></li>
+        <li><%= link_to "Add picture", new_picture_path %></li>
+      </nav>
+    </header>
+
     <%= yield %>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
