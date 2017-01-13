@@ -1,0 +1,194 @@
+/* =================================
+  Box sizing
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+/* =================================
+  Typography
+==================================== */
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =================================
+  Navigation
+==================================== */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header h1 a {
+  color: #4A4A4A;
+}
+
+header nav a {
+  color: #f5b723;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #4a4a4a;
+}
+
+@media screen and (max-width: 650px) {
+  header  {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: #D32F2F;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* =================================
+  Banner
+==================================== */
+.banner {
+  /*background-image: url("images/red-dino-hi.png");  -- refuses to work :O */
+  background-color: #D32F2F;
+  background: linear-gradient(to top, #D32F2F, #B30F0F);
+  color: white;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+/* =================================
+  Gallery
+==================================== */
+.about-page,
+.contact-page,
+.dinosaurs-gallery,
+.valley-gallery {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.valley-card {
+  background-color: #ECECEC;
+  width: calc(100%/3 - 40px);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.valley-img {
+  height: 150px;
+  overflow: hidden;
+}
+
+/* big screen */
+@media screen and (min-width: 1200px) {
+  .valley-card {
+    width: calc(100%/4 - 40px);
+  }
+}
+
+/* tablet screen */
+@media screen and (max-width: 768px) {
+  .valley-card {
+    width: calc(100%/2 - 40px);
+  }
+}
+
+/* mobile screen */
+@media screen and (max-width: 480px) {
+  .valley-card {
+    width: calc(100% - 40px);
+  }
+}
+
+/* =================================
+  Dinos
+==================================== */
+.dinosaurs-gallery {
+  flex-direction: column;
+}
+.dino-card {
+  background-color: #ECECEC;
+  max-width: 940px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.dino-img {
+  margin-right: 40px;
+  flex-basis: 150px;
+}
+.dino-img img {
+  border-radius: 50%;
+}
+.dino-more {
+  border-top: 1px solid #D32F2F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.dino-more ul {
+  align-self: flex-start;
+  list-style-type: none;
+  padding: 0;
+}
+.dino-more li {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #D32F2F;
+}
+.dino-more > .button {
+  height: 30px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .dino-card {
+    flex-direction: column;
+  }
+}
+
+/* =================================
+  Footer
+==================================== */
+footer {
+    background-color: #ECECEC;
+    text-align: center;
+    padding: 20px;
+  }
