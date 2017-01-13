@@ -92,14 +92,14 @@ header nav a:hover {
 .about-page,
 .contact-page,
 .dinosaurs-gallery,
-.valley-gallery {
+.picture-gallery {
   flex: 1;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.valley-card {
+.picture-card {
   background-color: #ECECEC;
   width: calc(100%/3 - 40px);
   padding: 20px;

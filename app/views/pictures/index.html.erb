@@ -1,11 +1,15 @@
 <h1>Pictures</h1>
 
+<section class="picture-gallery">
+
 <% @pictures.each do |picture| %>
 
- <p>
+ <p class="picture-card">
    <%= link_to picture.caption, picture_path(picture.id) %>
-   by 
+   by
    <%= link_to picture.user.first_name, user_path(picture.user.id) %>
-   <%= image_tag picture.image_url %>
+   <img src ="http://placehold.it/300x250">
 </p>
 <% end %>
+
+</section>
