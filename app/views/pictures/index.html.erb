@@ -1,6 +1,8 @@
 <h1>Pictures</h1>
 <section class="banner">
-  <%= image_tag @pictures.sample.image_url %>
+  <% if @pictures.any? %>
+    <%= image_tag @pictures.sample.image_url %>
+  <% end %>
 </section>
 
 <section class="picture-gallery">
