@@ -13,13 +13,13 @@
     <header class="maxwidth">
       <%= link_to root_url do %>
         <nav class="header-left">
-          <li class="header-logo"><%= image_tag "http://placehold.it/50x50" %></li>
+          <li class="header-logo"><%= image_tag("logo.svg", class: "logo") %></li>
           <li class="header-name">Seven Best</li>
         </nav>
       <% end %>
 
       <nav class="header-right">
-        <li><%= link_to "Users", users_path %></li>
+        <li><%= link_to "users", users_path, class: "users" %></li>
         <li><%= link_to image_tag("addImage.svg", class: "addIcon"), new_picture_path %></li>
       </nav>
     </header>

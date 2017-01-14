@@ -56,9 +56,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   display: block;
-  &:hover {
-    color: #f5b723;
-  }
 }
 
 .button {
@@ -141,16 +138,43 @@ header {
     }
   }
 
+  .header-left {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    .header-name {
+      text-transform: uppercase;
+      font-weight: 700;
+      text-size: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-left: -20px;
+    }
+  }
+
   .header-right {
     display: flex;
     align-items: center;
+
     a {
       display: flex;
       align-items: center;
+
       .addIcon {
         height: 30px;
         width: 30px;
       }
+    }
+
+    .users {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
     }
   }
 }
