@@ -51,6 +51,16 @@ h1 {
   }
 }
 
+a {
+  color: #4a4a4a;
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+  &:hover {
+    color: #f5b723;
+  }
+}
+
 .button {
   display: inline-block;
   color: #fff;
@@ -83,6 +93,10 @@ input[type=submit] {
 label {
   display: block;
   font-weight: 700;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -191,19 +205,6 @@ header {
 ==================================== */
 .users-new {
   text-align: center;
-  a {
-    color: #f5b723;
-    font-weight: 400;
-    font-size: 14px;
-    display: block;
-    &:hover {
-      color: #4a4a4a;
-    }
-  }
-}
-.users-wrapper {
-  display: flex;
-  justify-content: center;
 }
 .users-list {
   flex: 0;
