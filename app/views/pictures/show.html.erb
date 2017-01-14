@@ -1,5 +1,10 @@
-<h1>Picture by</h1>
-<h2><%= @picture.user.first_name %></h2>
-
 <%= image_tag @picture.image_url %>
-<p><%= @picture.caption %></p>
+<div class="picture-wrapper">
+  <div class="picture-info">
+    <p class="picture-caption"><%= @picture.caption %></p>
+    <p class="by-line">
+      By <%= @picture.user.full_name %>
+      <% if @picture.taken_on? %> on <%= @picture.taken_on %><% end %>
+    </p>
+  </div>
+</div>
