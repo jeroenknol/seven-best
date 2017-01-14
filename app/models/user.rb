@@ -14,6 +14,10 @@ class User < ApplicationRecord
                           length: { maximum: 255 },
                           format: { with: VALID_EMAIL_REGEX }
 
+  def full_name
+    self.first_name + " " + self.last_name
+  end
+
   private
     def downcase_email
       email.downcase!

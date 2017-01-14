@@ -1,0 +1,18 @@
+<h1><%= @user.full_name %></h1>
+<section class="banner">
+  <%= image_tag @user.pictures.sample.image_url %>
+</section>
+
+<section class="picture-gallery">
+
+<% @user.pictures.each do |picture| %>
+
+ <p class="picture-card">
+   <%= link_to picture.caption, picture_path(picture.id) %>
+   by
+   <%= link_to picture.user.first_name, user_path(picture.user.id) %>
+   <img class="picture-img" src ="http://placehold.it/300x250">
+</p>
+<% end %>
+
+</section>
