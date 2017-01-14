@@ -1,4 +1,12 @@
 /* =================================
+  Colors
+==================================== */
+
+$white: #EFEFEF;
+$orange: #eea044;
+$grey: #5b5b5b;
+
+/* =================================
   Box sizing
 ==================================== */
 * {
@@ -47,12 +55,12 @@ a {
 h1 {
   text-align: center;
   a {
-    color: #4A4A4A;
+    color: $grey;
   }
 }
 
 a {
-  color: #4a4a4a;
+  color: $grey;
   font-weight: 400;
   font-size: 14px;
   display: block;
@@ -60,8 +68,8 @@ a {
 
 .button {
   display: inline-block;
-  color: #fff;
-  background-color: #999;
+  color: $white;
+  background-color: $grey;
   padding: 10px;
   border-radius: 4px;
 }
@@ -129,11 +137,11 @@ header {
       margin-left: 20px;
     }
     a {
-      color: #f5b723;
+      color: $orange;
       font-size: 16px;
       font-weight: bold;
       &:hover {
-        color: #4a4a4a;
+        color: $grey;
       }
     }
   }
@@ -197,7 +205,7 @@ header {
   background: linear-gradient(to top, #D32F2F, #B30F0F);
   background-position: center center;
   background-size: cover;
-  color: white;
+  color: $white;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -217,7 +225,7 @@ header {
 
 .picture-card {
   position: relative;
-  background-color: #ECECEC;
+  background-color: $white;
   max-width: calc(100%/3 - 20px);
   height: 200px;
   margin: 10px;
@@ -244,19 +252,17 @@ header {
       left: 10px;
       top: -5px;
       line-height: normal;
+      color: $white;
+      font-weight: 300;
     }
 
     .user {
       position: absolute;
-      color: #db8d45;
+      color: $orange;
       text-align: right;
       position: absolute;
       right: 15px;
       bottom: -5px;
-    }
-
-    .a_text {
-      color: #FFF;
     }
 
   }
@@ -267,7 +273,7 @@ header {
   }
 
   span {
-    color: #EEE;
+    color: $white;
   }
 }
 
@@ -323,7 +329,7 @@ img {
   top: -50px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #efefef;
+  color: $white;
   display: flex;
   justify-content: space-between;
 }
@@ -345,7 +351,7 @@ img {
   Footer
 ==================================== */
 footer {
-    background-color: #ECECEC;
+    background-color: $white;
     text-align: center;
     padding: 20px;
   }
