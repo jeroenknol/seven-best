@@ -9,15 +9,19 @@
 
 
 <section class="picture-gallery">
+  <div class="container">
+    <% @user.pictures.each do |picture| %>
 
-<% @user.pictures.each do |picture| %>
 
- <p class="picture-card">
-   <%= link_to picture.caption, picture_path(picture.id) %>
-   by
-   <%= link_to picture.user.first_name, user_path(picture.user.id) %>
-   <img class="picture-img" src ="http://placehold.it/300x250">
-</p>
-<% end %>
-
+      <div class="picture-card">
+        <img class="picture-img" src ="http://placehold.it/300x200">
+        <!-- <div class="card_text"> -->
+        <p class="caption"><%= link_to picture.caption, picture_path(picture.id) %></p>
+        <!-- </div> -->
+        <div class="user_text">
+          <p class="user"><span>Made by</span> <%= link_to picture.user.first_name, user_path(picture.user.id) %></p>
+        </div>
+      </div>
+      <% end %>
+      </div>
 </section>
