@@ -140,11 +140,11 @@ header {
       margin-left: 20px;
     }
     a {
-      color: $orange;
+      color: $grey;
       font-size: 16px;
       font-weight: bold;
       &:hover {
-        color: $grey;
+        color: $orange;
       }
     }
   }
@@ -277,6 +277,7 @@ header {
 
   span {
     color: $white;
+    font-weight: 300;
   }
 }
 
@@ -356,7 +357,8 @@ img {
   Footer
 ==================================== */
 footer {
-    background-color: $white;
+    background-color: $grey;
+    color: $white;
     text-align: center;
     padding: 20px;
   }

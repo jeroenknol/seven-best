@@ -10,12 +10,12 @@
       }
 
       .cls-2 {
-        stroke: #d69446;
+        stroke: #eea044;
         stroke-width: 3px;
       }
 
       .cls-3 {
-        fill: #d69446;
+        fill: #eea044;
       }
 
       .cls-4 {
