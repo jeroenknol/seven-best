@@ -1,15 +1,28 @@
-<h1>Users</h1>
+<h1>Users
+  <small class="users-new"><%= link_to "Add user", new_user_path %></small>
+</h1>
 
 <% if @users.empty? %>
   <p>No users found.</p>
 <% else %>
+<div class="users-wrapper">
   <ul class="users-list">
     <% @users.each do |user| %>
-      <li>
+      <li class="user">
         <h2><%= user.full_name %></h2>
         <p><%= pluralize(user.pictures.count, "Picture") %></p>
-        <%= link_to "View gallery", user_path(user.id) %>
+        <div class="users-actions">
+          <div class="flex-left">
+            <%= link_to "View Gallery", user_path(user.id), class: "button button-default" %>
+          </div>
+          <div class="flex-right">
+            <%= link_to "Edit User", edit_user_path(user.id), class: "button button-warning" %>
+            <%= link_to "Delete User", user_path(user.id), method: :delete,
+                data: { confirm: "Are you sure?" }, class: "button button-danger" %>
+          </div>
+        </div>
       </li>
     <% end %>
   </ul>
+</div>
 <% end %>
