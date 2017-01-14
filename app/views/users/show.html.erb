@@ -1,7 +1,12 @@
 <h1><%= @user.full_name %></h1>
+
 <section class="banner">
-  <%= image_tag @user.pictures.sample.image_url %>
+
+  <% if @user.pictures.any? %>
+    <%= image_tag @user.pictures.sample.image_url %>
+  <% end %>
 </section>
+
 
 <section class="picture-gallery">
 
