@@ -88,7 +88,7 @@ input {
   width: 100%;
 }
 input[type=submit] {
-  width: 25%;
+  width: 100px;
 }
 label {
   display: block;
@@ -98,6 +98,16 @@ label {
   display: flex;
   justify-content: center;
 }
+.form-2-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .flex-right {
+    align-self: flex-end;
+  }
+}
+
 
 
 

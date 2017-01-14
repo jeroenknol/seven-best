@@ -15,13 +15,15 @@
     <%= f.date_field :taken_on %>
   </p>
 
-  <p>
-    <%= f.label :user_id %>
-    <%= f.collection_select(:user_id, User.all, :id, :full_name) %>
+  <p class="form-2-cols">
+    <span>
+      <%= f.label :user_id %>
+      <%= f.collection_select(:user_id, User.all, :id, :full_name) %>
+    </span>
+    <%= f.submit (@picture.new_record? ? "Create" : "Edit"), class: "flex-right" %>
   </p>
 
   <p>
-    <%= f.submit (@picture.new_record? ? "Create" : "Edit") %>
   </p>
 <% end %>
 </div>
