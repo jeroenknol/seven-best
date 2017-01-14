@@ -337,15 +337,17 @@ img {
   justify-content: space-between;
 }
 .picture-caption {
+  font-weight: 300;
   align-self:flex-start;
   margin-left: 30px;
 }
 .by-line {
+  font-weight: 300;
   align-self: flex-end;
   margin-right: 30px;
   a {
     display: inline;
-    color: #f5b723;
+    color: $orange;
   }
 }
 
