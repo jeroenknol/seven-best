@@ -21,6 +21,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+  a {
+    color: #4A4A4A;
+  }
+}
+
 .button {
   display: inline-block;
   background-color: #D32F2F;
@@ -56,13 +63,6 @@ header {
       &:hover {
         color: #4a4a4a;
       }
-    }
-  }
-
-  h1 {
-    text-align: center;
-    a {
-      color: #4A4A4A;
     }
   }
 }
@@ -113,6 +113,8 @@ header {
   overflow: hidden;
   width: 240px;
 }
+
+
 
 /* =================================
   Footer
