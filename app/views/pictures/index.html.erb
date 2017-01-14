@@ -1,7 +1,10 @@
-<h1>Pictures</h1>
 <section class="banner">
   <% if @pictures.any? %>
-    <%= image_tag @pictures.sample.image_url %>
+    <style type="text/css">
+      .banner {
+        background-image: url(<%= @pictures.sample.image_url %>);
+      }
+    </style>
   <% end %>
 </section>
 
