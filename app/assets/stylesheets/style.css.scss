@@ -235,9 +235,9 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 
-    &:hover {
-      opacity: 1;
-    }
+    // &:hover {
+    //   opacity: 1;
+    // }
 
     .caption {
       position: absolute;
@@ -334,6 +334,10 @@ img {
 .by-line {
   align-self: flex-end;
   margin-right: 30px;
+  a {
+    display: inline;
+    color: #f5b723;
+  }
 }
 
 

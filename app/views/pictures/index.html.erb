@@ -11,12 +11,13 @@
 <section class="picture-gallery">
   <div class="container">
     <% @pictures.each do |picture| %>
-
       <div class="picture-card">
+        <%= link_to picture_path(picture) do %>
         <div class="overlay">
-          <p class="caption"><%= link_to picture.caption, picture_path(picture.id), class: "a_text" %></p>
-          <p class="user"><span>Made by</span> <%= link_to picture.user.first_name, user_path(picture.user.id), class: "a_text" %></p>
+          <p class="caption"><%= picture.caption %></p>
+          <p class="user"><span>Made by</span> <%= picture.user.first_name %></p>
         </div>
+        <% end %>
         <%= image_tag picture.image_url %>
       </div>
     <% end %>
