@@ -56,9 +56,6 @@ a {
   font-weight: 400;
   font-size: 14px;
   display: block;
-  &:hover {
-    color: #f5b723;
-  }
 }
 
 .button {
@@ -140,6 +137,46 @@ header {
       }
     }
   }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    .header-name {
+      text-transform: uppercase;
+      font-weight: 700;
+      text-size: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      margin-left: -20px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      .addIcon {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    .users {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -154,12 +191,16 @@ header {
   Banner
 ==================================== */
 .banner {
+  position: relative;
   background-color: #D32F2F;
   background: linear-gradient(to top, #D32F2F, #B30F0F);
+  background-position: center center;
+  background-size: cover;
   color: white;
-  padding: 40px 0 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  height: 280px;
+  height: 340px;
 }
 
 /* =================================

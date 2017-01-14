@@ -1,12 +1,14 @@
-<h1><%= @user.full_name %></h1>
-
 <section class="banner">
-
   <% if @user.pictures.any? %>
-    <%= image_tag @user.pictures.sample.image_url %>
+    <style type="text/css">
+      .banner {
+        background-image: url(<%= @user.pictures.sample.image_url %>);
+      }
+    </style>
   <% end %>
 </section>
 
+<h1><%= @user.full_name %></h1>
 
 <section class="picture-gallery">
   <div class="container">
