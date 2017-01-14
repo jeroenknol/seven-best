@@ -16,7 +16,7 @@
 
 
       <div class="picture-card">
-        <img class="picture-img" src ="http://placehold.it/300x200">
+        <%= image_tag picture.image_url %>
         <!-- <div class="card_text"> -->
         <p class="caption"><%= link_to picture.caption, picture_path(picture.id) %></p>
         <!-- </div> -->
