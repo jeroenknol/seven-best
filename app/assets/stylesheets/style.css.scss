@@ -21,6 +21,12 @@ footer {
   max-width: 960px;
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* =================================
   Typography
 ==================================== */
