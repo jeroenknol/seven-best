@@ -137,7 +137,7 @@ header {
       }
     }
   }
-
+  
   .header-left {
     display: flex;
     align-items: center;
@@ -232,23 +232,26 @@ header {
 
   .caption {
     position: absolute;
-    right: 10px;
-    bottom: -5px;
+    left: 10px;
+    top: -5px;
     line-height: normal;
   }
 
   .user_text {
-    position: absolute;
-    left: 10px;
-    top: -5px;
+    position: relative;
     color: #db8d45;
+    text-align: right;
+    .user {
+      position: absolute;
+      right: 20px;
+      bottom: -5px;
+    }
   }
 
   span {
     color: #676767;
   }
 }
-
 
 
 /* =================================
