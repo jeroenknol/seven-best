@@ -140,6 +140,19 @@ header {
       }
     }
   }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      .addIcon {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {

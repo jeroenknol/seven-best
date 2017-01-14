@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3329 907 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #d69446;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #d69446;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect x="3329" y="907" width="30" height="30"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <rect class="cls-6" x="3329" y="907" width="30" height="30"/>
+    <g id="Group_1" data-name="Group 1">
+      <g id="Ellipse_10" data-name="Ellipse 10" class="cls-2" transform="translate(3329 907)">
+        <circle class="cls-4" cx="15" cy="15" r="15"/>
+        <circle class="cls-5" cx="15" cy="15" r="13.5"/>
+      </g>
+      <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-3" width="4" height="14" rx="2" transform="translate(3342 915)"/>
+      <rect id="Rectangle_29" data-name="Rectangle 29" class="cls-3" width="4" height="14" rx="2" transform="translate(3351 920) rotate(90)"/>
+    </g>
+  </g>
+</svg>

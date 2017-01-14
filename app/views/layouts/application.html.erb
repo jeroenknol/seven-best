@@ -20,14 +20,14 @@
 
       <nav class="header-right">
         <li><%= link_to "Users", users_path %></li>
-        <li><%= link_to "Add picture", new_picture_path %></li>
+        <li><%= link_to image_tag("addImage.svg", class: "addIcon"), new_picture_path %></li>
       </nav>
     </header>
 
     <main>
       <%= yield %>
     </main>
-    
+
     <footer>
       <div class="container">
         <p>&copy; - Colin Hans Sander Jeroen</p>
