@@ -1,0 +1,124 @@
+/* =================================
+  Box sizing
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+/* =================================
+  Typography
+==================================== */
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: #D32F2F;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* =================================
+  Navigation
+==================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+
+  nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    li {
+      margin-left: 20px;
+    }
+    a {
+      color: #f5b723;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover {
+        color: #4a4a4a;
+      }
+    }
+  }
+
+  h1 {
+    text-align: center;
+    a {
+      color: #4A4A4A;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header  {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+/* =================================
+  Banner
+==================================== */
+.banner {
+  /*background-image: url("images/red-dino-hi.png");  -- refuses to work :O */
+  background-color: #D32F2F;
+  background: linear-gradient(to top, #D32F2F, #B30F0F);
+  color: white;
+  padding: 40px 0 20px;
+  text-align: center;
+  height: 280px;
+}
+
+/* =================================
+  Gallery
+==================================== */
+.dinosaurs-gallery,
+.picture-gallery {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picture-card {
+  background-color: #ECECEC;
+  width: 280px;
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.picture-img {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 240px;
+}
+
+/* =================================
+  Footer
+==================================== */
+footer {
+    background-color: #ECECEC;
+    text-align: center;
+    padding: 20px;
+  }
