@@ -3,7 +3,7 @@
   <div class="picture-info">
     <p class="picture-caption"><%= @picture.caption %></p>
     <p class="by-line">
-      By <%= @picture.user.full_name %>
+      By <%= link_to @picture.user.full_name, user_path(@picture.user) %>
       <% if @picture.taken_on? %> on <%= @picture.taken_on %><% end %>
     </p>
   </div>

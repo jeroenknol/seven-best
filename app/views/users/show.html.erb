@@ -13,16 +13,14 @@
 <section class="picture-gallery">
   <div class="container">
     <% @user.pictures.each do |picture| %>
-
-
       <div class="picture-card">
-        <%= image_tag picture.image_url %>
-        <!-- <div class="card_text"> -->
-        <p class="caption"><%= link_to picture.caption, picture_path(picture.id) %></p>
-        <!-- </div> -->
-        <div class="user_text">
-          <p class="user"><span>Made by</span> <%= link_to picture.user.first_name, user_path(picture.user.id) %></p>
+        <%= link_to picture_path(picture) do %>
+        <div class="overlay">
+          <p class="caption"><%= picture.caption %></p>
+          <p class="user"><span>Made by</span> <%= picture.user.first_name %></p>
         </div>
+        <% end %>
+        <%= image_tag picture.image_url %>
       </div>
     <% end %>
   </div>
