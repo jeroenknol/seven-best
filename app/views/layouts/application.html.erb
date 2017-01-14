@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="maxwidth">
       <%= link_to root_url do %>
         <nav class="header-left">
           <li class="header-logo"><%= image_tag "http://placehold.it/50x50" %></li>
@@ -19,7 +19,7 @@
       <% end %>
 
       <nav class="header-right">
-        <li><%= link_to "Users", "#" %></li>
+        <li><%= link_to "Users", users_path %></li>
         <li><%= link_to "Add picture", new_picture_path %></li>
       </nav>
     </header>
@@ -27,7 +27,9 @@
     <%= yield %>
 
     <footer>
-      <p>&copy; - Colin Hans Sander Jeroen</p>
+      <div class="container">
+        <p>&copy; - Colin Hans Sander Jeroen</p>
+      <div class="container">
     </footer>
   </body>
 </html>
