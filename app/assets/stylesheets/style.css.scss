@@ -167,12 +167,16 @@ header {
   Banner
 ==================================== */
 .banner {
+  position: relative;
   background-color: #D32F2F;
   background: linear-gradient(to top, #D32F2F, #B30F0F);
+  background-position: center center;
+  background-size: cover;
   color: white;
-  padding: 40px 0 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  height: 280px;
+  height: 340px;
 }
 
 /* =================================
