@@ -1,24 +1,18 @@
-# README
+# Seven Best
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project that was made during the hackathon of week 1 at Codaisseur Academy.
+It is an Instagram like picture website where users can upload their seven best pictures.
 
-Things you may want to cover:
+![](https://raw.githubusercontent.com/jeroenknol/seven-best/master/app/assets/images/screenshot.png)
 
-* Ruby version
+## Running Locally
 
-* System dependencies
+Make sure you have [Ruby](https://www.ruby-lang.org/en/) and [Bundler](http://bundler.io/) installed.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+git clone git@github.com:jeroenknol/seven-best.git
+cd seven-best
+bundle install
+rails db:create db:migrate db:seed
+rails server
+```
